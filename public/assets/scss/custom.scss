@@ -1,0 +1,413 @@
+$primary:#1D2B50;
+$secondary:#dee2e6;
+
+
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+$font-family-sans-serif:      "Wix Madefor Text", sans-serif;
+
+$body-bg: #F7F7F7;
+
+// custom variable declaration
+
+// variable overriding for card
+$card-spacer-y:                     1.5rem;
+$card-spacer-x:                     1.5rem;
+$card-title-spacer-y:               $spacer * 1;
+$card-border-width:                 0;
+$card-border-radius:                0.5rem;
+$card-bg:                           $white;
+
+
+// variable overriding for list
+$list-group-bg:                     $white;
+$list-group-item-padding-y:         $spacer * 1;
+$list-group-item-padding-x:         1.5rem;
+
+
+$form-check-input-checked-color:          #1D2B50;
+$form-check-input-checked-bg-color:       #1D2B50;
+$form-check-input-checked-border-color:   #1D2B50;
+$form-label-color:                      #7F7F7F;
+
+$dropdown-bg:                       #fff;
+$dropdown-link-hover-bg:            #f0f3f5;
+
+$toast-background-color:            #FFFAF9;
+$toast-border-color:                #F4B0A1;
+$form-label-color:                  #7E7E7E;
+
+$font-size-base:              14px;
+       
+// color
+$custom-colors:(
+  "primary": #1D2B50,
+  "secondary":#e6e6e6
+  );
+
+
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+.bg-login {
+  background: url("../images/bg-login.jpg");
+  background-size: cover;
+  height: 100vh
+}
+.navbar-expand-lg {
+  margin-left: 40px;
+  margin-right: 40px;
+  border-bottom: 1px solid #ECEFF2;
+}
+.breadcrumb-item a{
+  color: #9C9C9C;
+  text-decoration: none;
+  &:hover{
+    color: #0072c9;
+  }
+}
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.custom-wordcloud {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.wordcloud-item {
+  background-color: #E6F1FF;
+  color: #000;
+  &.active {
+    background-color: #F5F9FF !important;
+    border: 1px solid #B7D6FF;
+    color: #000 !important
+  }
+  &:hover {
+    background-color: #F5F9FF !important;
+  }
+}
+.chevron-border {
+  border-right:1px solid #CECECE;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  height: 83vh;
+    overflow-y: auto;
+
+.timeline-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #1D2B50;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 4px;
+  top: 22px;
+  width: 2px;
+  height: 100%;
+  background-color: #CDCDCD;
+}
+
+.timeline-date {
+  color: #757575;
+  font-size: .825rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.timeline-item:last-child .timeline-line {
+  display: none;
+}
+}
+.profile-dropdown {
+  right: 0 !important;
+  left: auto !important
+}
+.custom-size-date {
+  width: 45px;
+}
+.custom-position{
+  bottom: 40px;
+  right: 40px;
+}
+.custom-position-chat {
+  bottom: 115px;
+  right: 40px;
+
+}
+.custom-modal-bg:after{
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  position:absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.custom-card-title {
+  background-color: #1D2B50;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+}
+
+.custom-border-chat-right {
+  border-radius: 50px 50px 10px 50px;
+}
+.custom-border-chat-left {
+  border-radius: 50px 50px 50px 10px;
+}
+.error-page-container{
+  height: calc(100vh - 73px);
+}
+.loader-container{
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position:fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.load{
+  display: flex;
+  gap: 5px;
+}
+.load div{
+  width: 7px;
+  border-radius: 10px;
+  animation: delay 1s ease-in-out infinite; 
+}
+
+.bar1 {
+  background-color: #1D2B50;
+  height: 18px;
+}
+.bar2 {
+  background-color: #616B85;
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s !important;
+  height: 17px;
+}
+.bar3 {
+  background-color: #A5AAB9;
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s !important;
+  height: 15px;
+}
+.bar4 {
+  background-color: #E9EAEE;
+  -webkit-animation-delay: -0.5s !important;
+  animation-delay: -0.5s !important;
+  height: 13px;
+}
+@-webkit-keyframes delay {
+	0%,  40%,  100% {transform:scaleY(1); -webkit-transform:scaleY(1);}
+	20% {transform:scaleY(1.8); -webkit-transform:scaleY(1.8);}
+}
+@keyframes delay {
+	0%,  40%,  100% {transform:scaleY(1); -webkit-transform:scaleY(1);}
+	20% {transform:scaleY(1.8); -webkit-transform:scaleY(1.8);}
+}
+.document-scroll{
+  height: 400px;
+  overflow-y: auto;
+}
+.case-overview-scroll{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wordcloud-scroll{
+
+  min-height: 80px;
+  max-height:140px;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.selected-doc-scroll{
+  height: 600px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.selected-popupdoc-scroll{
+  height: 515px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.link-color
+{
+  color: #4C8CFF !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+.timeline-item .medical-summary:hover
+{
+  border-radius: 4px;
+  background: rgba(171, 171, 171, 0.10);
+  cursor: pointer;
+}
+
+.timeline-item .medical-summary.active
+{
+  border-radius: 4px;
+  background: rgba(171, 171, 171, 0.10);
+  cursor: pointer;
+}
+
+.text-break-spaces {
+  white-space: break-spaces;
+}
+
+.grey-v1
+{
+  color: #747687;
+}
+
+.blur{
+  filter: blur(20px);
+}
+
+::-webkit-scrollbar-track
+{	
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;	
+	background-color: #ccc;
+}
+
+.disabled-nav-button {
+  cursor: not-allowed;
+}
+
+   .summary-container a {
+       cursor: pointer !important; /* Change cursor to pointer */
+       text-decoration: underline !important; /* Optional: underline for better visibility */
+       color: blue !important; /* Optional: change color for better visibility */
+   }
+
+   .summary-container a:hover {
+       color: darkblue !important; /* Optional: change color on hover */
+   }
+
+//    .truncate {
+//     white-space: nowrap; /* Prevents text from wrapping */
+//     overflow: hidden; /* Hides overflow text */
+//     // text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
+// }
+
+.dropdown-Scroll{
+  max-height: 130px;
+    overflow: auto;
+}
+
+.searchInput{
+  max-width: 480px;
+}
+
+.profile-image{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+
+.dot-typing {
+  position: relative;
+  left: -9992px;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  color: #1D2B50;
+  margin-right: 15px;
+  box-shadow: 9984px 0 0 0 #1D2B50, 9999px 0 0 0 #1D2B50, 10014px 0 0 0 #1D2B50;
+  animation: dot-typing 1.5s infinite linear;
+}
+
+@keyframes dot-typing {
+  0% {
+    box-shadow: 9984px 0 0 0  #ccc, 9999px 0 0 0  #ccc, 10014px 0 0 0 #ccc;
+  }
+  16.667% {
+    box-shadow: 9984px -8px 0 0 #ccc, 9999px 0 0 0 #ccc, 10014px 0 0 0 #ccc;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #ccc, 9999px 0 0 0 #ccc, 10014px 0 0 0 #ccc;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #ccc, 9999px -8px 0 0 #ccc, 10014px 0 0 0 #ccc;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #ccc, 9999px 0 0 0 #ccc, 10014px 0 0 0 #ccc;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #ccc, 9999px 0 0 0 #ccc, 10014px -8px 0 0 #ccc;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #ccc, 9999px 0 0 0 #ccc, 10014px 0 0 0 #ccc;
+  }
+}
+
+
+.custom-tooltip{
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  text-align: left;
+  max-width: 200px;
+  overflow: auto;
+  right: 0;
+  top: 100%;
+  display: none;
+  z-index: 999;
+}
+.wordcloud-item:hover .custom-tooltip{
+  display: block;
+}
+.custom-wordcloud li:last-child a .custom-tooltip,
+.custom-wordcloud li:nth-last-child(2) a .custom-tooltip,
+.custom-wordcloud li:nth-last-child(2) a .custom-tooltip{
+  top: auto;
+  bottom: 100%;
+}
